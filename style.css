@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Young+Serif&display=swap');
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --nutmeg: hsl(14, 45%, 36%);
+    --dark-raspberry: hsl(332, 51%, 32%);
+    --white: hsl(0, 0%, 100%);
+    --rose-white: hsl(330, 100%, 98%);
+    --eggshell: hsl(30, 54%, 90%);
+    --light-grey: hsl(30, 18%, 87%);
+    --wenge-brown: hsl(30, 10%, 34%);
+    --dark-charcoal: hsl(24, 5%, 18%);
+    --border-radius: 2rem
+}
+
+body {
+    font-family: 'Young Serif', serif;
+    background-color: var(--eggshell);
+}
+
+p {
+    font-size: 1rem;
+    color: var(--wenge-brown);
+}
+
+p, span, h3, li {
+    font-family: 'Outfit', sans-serif;
+}
+
+hr {
+    color: var(--light-grey);
+}
+
+li {
+    margin-left: 0.5rem;
+    padding-bottom: 0.8rem;
+    color: var(--wenge-brown);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+}
+
+main {
+    width: 80%;
+    max-width: 720px;
+    background-color: var(--white);
+    border-radius: var(--border-radius);
+    margin: 8rem auto;
+    padding: 2.5rem;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+.omelette-title {
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: var(--dark-charcoal);
+    padding: 1rem 0;
+}
+
+.omelette-text {
+    padding-bottom: 1rem;
+}
+
+.omelette-preparation {
+    border-radius: 1rem;
+    background-color: var(--rose-white);
+    padding: 1.5rem;
+    margin: 1rem 0;
+}
+
+.preparation-title {
+    color: var(--dark-raspberry);
+    padding-bottom: 1rem;
+}
+
+.ingredients-title, .instructions-title, .nutrition-title {
+    color: var(--nutmeg);
+    font-weight: 400;
+    padding-bottom: 1rem;
+}
+
+.ingredients, .instructions, .nutrition {
+    margin: 1.5rem 0;
+}
+
+.instruction-link {
+    color: var(--nutmeg);
+    margin-left: 1.5rem;
+    font-weight: 600;
+}
+
+.instruction-link p {
+    margin-left: 0.5rem;
+    font-weight: normal;
+    color: var(--wenge-brown);
+}
+
+.nutrition-text {
+    padding-bottom: 1rem;
+}
+
+table {
+    border-collapse: collapse;
+    font-family: 'Outfit', sans-serif;
+    width: 100%;
+}
+
+tr:not(:last-child) {
+    border-bottom: 1.5px solid var(--light-grey);
+}
+
+td {
+    padding: 1rem 2rem;
+}
+
+.nutrition-names {
+    color: var(--wenge-brown);
+    font-weight: 400;
+}
+
+.nutrition-weight {
+    color: var(--nutmeg);
+    font-weight: 600;
+}
+
+@media(max-width: 576px) {
+    main {
+        width: 100%;
+        background-color: var(--white);
+        margin: 0;
+        padding: 0 1.5rem 1.5rem;
+        border-radius: 0;
+    }
+
+    img {
+        max-width: 100%;
+        border-radius: 0;
+    }
+}
